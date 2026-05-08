@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Samruddhi's WD Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+    overflow-x:hidden;
+    color:white;
+    padding:30px;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    padding:20px 40px;
+    margin-bottom:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#00e5ff;
+}
+
+.name{
+    background:rgba(255,255,255,0.1);
+    padding:10px 20px;
+    border-radius:30px;
+    font-size:18px;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero span{
+    color:#00e5ff;
+}
+
+.hero p{
+    color:#d6d6d6;
+    font-size:20px;
+}
+
+/* Container */
+
+.container{
+    width:100%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* Grid */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+/* Cards */
+
+.card{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:25px;
+    padding:35px 25px;
+    text-align:center;
+    backdrop-filter:blur(12px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+.card::before{
+    content:'';
+    position:absolute;
+    width:160px;
+    height:160px;
+    background:rgba(0,229,255,0.12);
+    border-radius:50%;
+    top:-60px;
+    right:-60px;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 10px 30px rgba(0,229,255,0.35);
+}
+
+.card h2{
+    margin-bottom:15px;
+    font-size:28px;
+    position:relative;
+    z-index:1;
+}
+
+.card p{
+    color:#d6d6d6;
+    margin-bottom:25px;
+    position:relative;
+    z-index:1;
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:bold;
+    transition:0.3s;
+    position:relative;
+    z-index:1;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+/* Footer */
+
+.footer{
+    text-align:center;
+    margin-top:50px;
+    padding:20px;
+    color:#d6d6d6;
+    background:rgba(255,255,255,0.05);
+    border-radius:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<div class="navbar">
+    <div class="logo">🌐 Web Devlopment </div>
+    <div class="name">👩‍💻 Samruddhi Budde</div>
+</div>
+
+<!-- Hero Section -->
+
+<div class="hero">
+    <h1>Welcome to <span>My Assignments</span></h1>
+    <p>Web Development Assignment </p>
+</div>
+
+<!-- Dashboard -->
+
+<div class="container">
+
+    <div class="grid">
+
+        <div class="card">
+            <h2>Assignment 1</h2>
+            <p>Word Document Submission</p>
+            <a href="ASSIGNMENT No1.docx" class="btn">📄 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 2</h2>
+            <p>Web Development Task</p>
+            <a href="EXP_02.html" class="btn">🚀 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 3</h2>
+            <p>HTML Experiment</p>
+            <a href="EXP3.html" class="btn">💻 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 4</h2>
+            <p>CSS Styling Experiment</p>
+            <a href="EXP_04.html" class="btn">🎨 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 5</h2>
+            <p>Responsive Web Design</p>
+            <a href="EXP_05.html" class="btn">📱 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 6</h2>
+            <p>Frontend Mini Project</p>
+            <a href="EXP06.html" class="btn">⚡ Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 7</h2>
+            <p>Advanced Webpage Design</p>
+            <a href="EXP_07.html" class="btn">🌟 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 8</h2>
+            <p>Interactive UI Design</p>
+            <a href="EXP_08.html" class="btn">🔥 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 9</h2>
+            <p>Modern Layout Project</p>
+            <a href="EXP_09.html" class="btn">🖥 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 10</h2>
+            <p>Resume Website</p>
+            <a href="Exp_10(resume).html" class="btn">📑 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 11</h2>
+            <p>XML File Experiment</p>
+            <a href="Expriment11.xml" class="btn">🧩 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 12</h2>
+            <p>Advanced XML Task</p>
+            <a href="Expriment12.xml" class="btn">📂 Open</a>
+        </div>
+
+        <div class="card">
+            <h2>Assignment 13</h2>
+            <p>Final XML Experiment</p>
+            <a href="Expriment13.xml" class="btn">🏁 Open</a>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<div class="footer">
+    ✨ Designed By Samruddhi Budde | WD Assignment Dashboard
+</div>
+
+</body>
+</html>
